@@ -29,7 +29,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Map<String,bool?> checkLists = {
     'Groceries':true,
     'Kids':false,
-    'Personal':true
+    'Personal':true,
+    "Medicine":false,
+    "Ladies":true
   };
 
   @override
@@ -92,7 +94,7 @@ class ShoppingCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: const Color(0xffeeeee),width: 2.0),
+        border: Border.all(color: const Color(0x0ffeeeee),width: 1.0),
         color: Colors.white38,
         borderRadius: const BorderRadius.all(Radius.circular(20.0)),
       ),
